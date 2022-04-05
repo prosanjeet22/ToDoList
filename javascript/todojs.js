@@ -36,3 +36,13 @@ document.querySelector("#push").onclick = function()
 
     }
 }
+let msg=document.getElementById("addtasks");
+let button=document.getElementById("push");
+let textbox=document.getElementById("text_input");
+textbox.addEventListener("keyup",function(event){
+    if(event.keyCode===13)
+    {
+        button.click();
+    }
+
+});
